@@ -1,1 +1,54 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Buttons</title>
+</head>
+<style>
+    body{
+        text-align: center;
+       margin-top: 200px;
+    }
+    h1{
+        color: green;
+    }
+    /* Basic styles for radio buttons */
+    input[type="radio"] {
+      display: none;
+    }
+
+    input[type="radio"] + label {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: #e0e0e0;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    /* Styles for checked state */
+    input[type="radio"]:checked + label {
+      background-color: #4CAF50;
+      color: #fff;
+    }
+
+    /* Media query for small screens */
+    @media screen and (max-width: 500px) {
+      input[type="radio"] + label {
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+
+</style>
+<body>
+    <h1>Responsive Radio Buttons-By Pranjal Pagar</h1>
+    <input type="radio" id="radio1" name="group1">
+    <label for="radio1">HTML</label>
+    <input type="radio" id="radio2" name="group1">
+    <label for="radio2">CSS</label>
+</body>
+</html>
